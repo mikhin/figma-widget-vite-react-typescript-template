@@ -53,5 +53,10 @@
       2,
       { "props": "never", "children": "never" }
     ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }

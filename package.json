@@ -13,16 +13,12 @@
     "test": "pnpm run /^test:/"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "@figma/eslint-plugin-figma-plugins": "*",
-    "@figma/plugin-typings": "*",
-    "@figma/widget-typings": "*"
+    "@figma/plugin-typings": "^1.1.0",
+    "@figma/widget-typings": "^1.0.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.24",
-    "@types/react": "^18.2.56",
-    "@types/react-dom": "^18.2.19",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
     "@typescript-eslint/parser": "^7.0.2",
     "@vitejs/plugin-react": "^4.2.1",
