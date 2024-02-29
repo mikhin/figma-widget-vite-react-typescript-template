@@ -1,0 +1,57 @@
+{
+  "root": true,
+  "env": { "browser": true, "es2020": true },
+  "plugins": ["@typescript-eslint", "perfectionist", "react-refresh"],
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:import/typescript",
+    "plugin:import/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:perfectionist/recommended-natural",
+    "plugin:@figma/figma-plugins/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "@typescript-eslint/explicit-function-return-type": "error",
+    "import/no-default-export": "error",
+    "func-style": ["error", "expression"],
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ]
+      }
+    ],
+    "perfectionist/sort-imports": "off",
+    "perfectionist/sort-jsx-props": "off",
+    "no-return-await": "error",
+    "react-refresh/only-export-components": [
+      "warn",
+      { "allowConstantExport": true }
+    ],
+    "react/jsx-sort-props": "error",
+    "react/react-in-jsx-scope": "off",
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "react/jsx-curly-brace-presence": [
+      2,
+      { "props": "never", "children": "never" }
+    ]
+  }
+}
