@@ -4,7 +4,7 @@ const { widget } = figma;
 const { AutoLayout, SVG, Text, usePropertyMenu, useSyncedState } = widget;
 
 // eslint-disable-next-line react-refresh/only-export-components,@typescript-eslint/explicit-function-return-type
-const Widget = () => {
+export const Widget = () => {
   const [count, setCount] = useSyncedState('count', 0);
 
   if (count !== 0) {

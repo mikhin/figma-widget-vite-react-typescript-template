@@ -1,7 +1,18 @@
-/// <reference types="vitest" />
 import { resolve } from 'path';
 import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
+
+const figmaWidgetReactPlugin = react({
+  babel: {
+    plugins: [
+      // Custom JSX factory for Figma widgets
+      [
+        '@babel/plugin-transform-react-jsx',
+        { pragma: 'figma.widget.h', pragmaFrag: 'figma.widget.Fragment' },
+      ],
+    ],
+  },
+});
 
 export default defineConfig({
   build: {
@@ -18,11 +29,5 @@ export default defineConfig({
     },
     target: 'es2015',
   },
-  plugins: [react()],
-  test: {
-    coverage: {
-      provider: 'v8',
-      reportsDirectory: resolve(__dirname, 'coverage', 'api'),
-    },
-  },
+  plugins: [figmaWidgetReactPlugin],
 });
