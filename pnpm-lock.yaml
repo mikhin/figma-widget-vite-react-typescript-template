@@ -6,14 +6,14 @@ settings:
 
 dependencies:
   '@figma/eslint-plugin-figma-plugins':
-    specifier: '*'
-    version: 0.10.0(eslint@8.56.0)
+    specifier: ^0.14.0
+    version: 0.14.0(eslint@8.56.0)
   '@figma/plugin-typings':
-    specifier: ^1.1.0
-    version: 1.1.0
+    specifier: ^1.88.0
+    version: 1.88.0
   '@figma/widget-typings':
-    specifier: ^1.0.0
-    version: 1.0.0(@figma/plugin-typings@1.1.0)
+    specifier: ^1.9.1
+    version: 1.9.1(@figma/plugin-typings@1.88.0)
 
 devDependencies:
   '@babel/plugin-transform-react-jsx':
@@ -736,10 +736,10 @@ packages:
       }
     engines: { node: ^12.22.0 || ^14.17.0 || >=16.0.0 }
 
-  /@figma/eslint-plugin-figma-plugins@0.10.0(eslint@8.56.0):
+  /@figma/eslint-plugin-figma-plugins@0.14.0(eslint@8.56.0):
     resolution:
       {
-        integrity: sha512-y2P7UAH3g5FijMN+dHigjs0BPEZ/x4iN0F1Z8kAVGS/dqCEIXvRR8l13ety5QzwZSka/l4/6iN/DGnt2b1xBig==,
+        integrity: sha512-tkWXJACqX84t0vnxCO+298xw1AJByds/97Xgf26KR8bzGA21NoFM9CZOSLOggCnXZANJH6720qLxBYi/HVZMcA==,
       }
     dependencies:
       '@typescript-eslint/typescript-estree': 6.21.0(typescript@5.3.3)
@@ -750,22 +750,22 @@ packages:
       - supports-color
     dev: false
 
-  /@figma/plugin-typings@1.1.0:
+  /@figma/plugin-typings@1.88.0:
     resolution:
       {
-        integrity: sha512-5SLYgWipm/9SOP00X2X4EXl0RjZONX28MpmcOQ1BIoy4AsBqoYDArjam0sy2F6vM9xa55M8YWXMbDizUk7J9Ww==,
+        integrity: sha512-ly9amJtPqlR48FZB0iKfyeCSo4O0QJhOfX+YYS/xEq0zoJzNETJLLQ43k93BS2W/N/BOVzgEjyAvC1WeuwFbdA==,
       }
     dev: false
 
-  /@figma/widget-typings@1.0.0(@figma/plugin-typings@1.1.0):
+  /@figma/widget-typings@1.9.1(@figma/plugin-typings@1.88.0):
     resolution:
       {
-        integrity: sha512-al0oSH49twRZv9HZadaKC/A5RQ/atM3u4RRfIvgShyJgx/al13SUguGWHP2oAxnFRDNdof/kqUNn8/GdUeqYaQ==,
+        integrity: sha512-jmh/hsBxLP4aKgtbmxkJe84Ufk93S7TwOxpLD7L58R472boU5vyZ7qF5DKlhwiRjF0sgaryXJxSXuIjdR1GBXQ==,
       }
     peerDependencies:
       '@figma/plugin-typings': 1.x
     dependencies:
-      '@figma/plugin-typings': 1.1.0
+      '@figma/plugin-typings': 1.88.0
     dev: false
 
   /@humanwhocodes/config-array@0.11.14:

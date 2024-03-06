@@ -12,9 +12,9 @@
     "test": "pnpm run /^test:/"
   },
   "dependencies": {
-    "@figma/eslint-plugin-figma-plugins": "*",
-    "@figma/plugin-typings": "^1.1.0",
-    "@figma/widget-typings": "^1.0.0"
+    "@figma/eslint-plugin-figma-plugins": "^0.14.0",
+    "@figma/plugin-typings": "^1.88.0",
+    "@figma/widget-typings": "^1.9.1"
   },
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.23.4",
